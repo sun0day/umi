@@ -508,6 +508,7 @@ export default function EmptyRoute() {
       );
       // @@/core/history.ts
       exports.push(`export { history, createHistory } from './core/history';`);
+      exports.push(`import { createPluginManager } from './core/plugin';`);
       checkMembers({
         members: ['history', 'createHistory'],
         exportMembers,
