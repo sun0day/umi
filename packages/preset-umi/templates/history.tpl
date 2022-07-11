@@ -1,4 +1,4 @@
-import { createHashHistory, createMemoryHistory, createBrowserHistory, History } from '{{{ rendererPath }}}';
+import { createHashHistory, createMemoryHistory, createBrowserHistory, Route, Router, Routes, History } from '{{{ rendererPath }}}';
 
 let history: History;
 let basename: string = '/';
@@ -47,4 +47,15 @@ function stripLastSlash(path) {
   return path.slice(-1) === '/' ? path.slice(0, -1) : path;
 }
 
-export { history };
+
+/**
+ * 为了方面测试，这里暴露了一下
+ */
+const RouteComponents = {
+  Route,
+  Router,
+  Routes,
+};
+
+export { history, RouteComponents };
+

@@ -508,6 +508,8 @@ export default function EmptyRoute() {
       );
       // @@/core/history.ts
       exports.push(`export { history, createHistory } from './core/history';`);
+
+      exports.push(`// 为了支持测试用例`);
       // 为了支持测试用例
       exports.push(`import { createPluginManager } from './core/plugin';`);
       checkMembers({
