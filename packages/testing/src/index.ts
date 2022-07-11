@@ -7,10 +7,23 @@ export type { Config };
 
 function getJSTransformer(
   jsTransformer: JSTransformer,
+  config?: {
+    esBuildConfig?: {
+      jsxFactory: string;
+      jsxFragment: string;
+      jsxInject: string;
+    };
+  },
 ): TransformerConfig | Path {
   switch (jsTransformer) {
     case 'esbuild':
-      return [require.resolve('esbuild-jest'), { sourcemap: true }];
+      return [
+        require.resolve('esbuild-jest'),
+        {
+          sourcemap: true,
+          ...config?.esBuildConfig,
+        },
+      ];
     case 'swc':
       return require.resolve('@swc-node/jest');
     case 'ts-jest':

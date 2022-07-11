@@ -27,7 +27,11 @@ export {
   useClientLoaderData,
   useServerLoaderData,
 } from './appContext';
-export { renderClient } from './browser';
+export {
+  getBrowser,
+  renderClient,
+  UMI_CLIENT_RENDER_REACT_PLUGIN_LIST,
+} from './browser';
 export { LinkWithPrefetch as Link } from './link';
 export { useRouteData } from './routeContext';
 export { __useFetcher } from './useFetcher';
