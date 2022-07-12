@@ -1,0 +1,19 @@
+{
+  "0 error pnpm": {
+    "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+    "packageId": "C:\\github\\umi",
+    "wanted": {
+      "pnpm": ">=7"
+    },
+    "current": {
+      "node": "v16.15.1",
+      "pnpm": "6.32.24"
+    },
+    "err": {
+      "name": "pnpm",
+      "message": "Unsupported engine for C:\\github\\umi: wanted: {\"pnpm\":\">=7\"} (current: {\"node\":\"v16.15.1\",\"pnpm\":\"6.32.24\"})",
+      "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+      "stack": "pnpm: Unsupported engine for C:\\github\\umi: wanted: {\"pnpm\":\">=7\"} (current: {\"node\":\"v16.15.1\",\"pnpm\":\"6.32.24\"})\n    at checkEngine (C:\\Users\\wasd2\\scoop\\persist\\nodejs\\bin\\node_modules\\pnpm\\dist\\pnpm.cjs:41467:16)\n    at checkPackage (C:\\Users\\wasd2\\scoop\\persist\\nodejs\\bin\\node_modules\\pnpm\\dist\\pnpm.cjs:43563:104)\n    at packageIsInstallable (C:\\Users\\wasd2\\scoop\\persist\\nodejs\\bin\\node_modules\\pnpm\\dist\\pnpm.cjs:43587:61)\n    at exports2.default (C:\\Users\\wasd2\\scoop\\persist\\nodejs\\bin\\node_modules\\pnpm\\dist\\pnpm.cjs:49418:46)\n    at async run (C:\\Users\\wasd2\\scoop\\persist\\nodejs\\bin\\node_modules\\pnpm\\dist\\pnpm.cjs:186811:29)\n    at async runPnpm (C:\\Users\\wasd2\\scoop\\persist\\nodejs\\bin\\node_modules\\pnpm\\dist\\pnpm.cjs:187075:5)\n    at async C:\\Users\\wasd2\\scoop\\persist\\nodejs\\bin\\node_modules\\pnpm\\dist\\pnpm.cjs:187067:7"
+    }
+  }
+}

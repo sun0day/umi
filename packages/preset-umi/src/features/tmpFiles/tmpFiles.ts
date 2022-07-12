@@ -511,7 +511,7 @@ export default function EmptyRoute() {
 
       exports.push(`// 为了支持测试用例`);
       // 为了支持测试用例
-      exports.push(`import { createPluginManager } from './core/plugin';`);
+      exports.push(`export { createPluginManager as _createPluginManager } from './core/plugin';`);
       checkMembers({
         members: ['history', 'createHistory'],
         exportMembers,
